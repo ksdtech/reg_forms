@@ -1,0 +1,287 @@
+%h1
+  %a{:href => "http://sprawsm.com/uni-form/", :style => "border: none;", :title => "visit Uni\342\200\223Form online"}
+    %img{:alt => "", :src => "images/uni-form-logo.png"}/
+%p.intro
+  This is an example form demonstrating all of the units offered by Uni–Form, along with suggested message handling, form actions and style.
+%form.uniForm{:action => "#"}
+  .header
+    %h2 Default Style
+    %p
+      Author:
+      %a{:href => "http://sprawsm.com/"} Dragan Babić
+      %a.cta{:href => "http://sprawsm.com/uni-form/"} see more styles →
+  #errorMsg
+    %h3 Ooops! Your error message title
+    %ol
+      %li Error number one
+      %li Error number two
+  #okMsg
+    %p
+      Looks like everything went OK! Yay!
+  %fieldset
+    %h3 Default Form Field Layout
+    .ctrlHolder
+      %label{:for => ""}
+        %em *
+        Small text input
+      %input.textInput.small{"data-default-value" => "Placeholder text", :id => "", :maxlength => "50", :name => "", :size => "35", :type => "text"}/
+      %p.formHint This is a form hint.
+    #error1.ctrlHolder.error
+      %label{:for => ""}
+        %em *
+        Medium text input
+      %input.textInput.medium.error{:id => "", :maxlength => "50", :name => "", :size => "35", :type => "text", :value => "Invalid value"}/
+      %p.formHint This is a form hint.
+    .ctrlHolder
+      %label{:for => ""}
+        %em *
+        Large text input
+      %input.textInput.large{"data-default-value" => "Placeholder text", :id => "", :maxlength => "50", :name => "", :size => "35", :type => "text"}/
+      %p.formHint This is a form hint.
+    .ctrlHolder
+      %label{:for => ""}
+        %em *
+        Autosized text input
+      %input.textInput.auto{"data-default-value" => "Placeholder text", :id => "", :maxlength => "50", :name => "", :size => "15", :type => "text"}/
+      %p.formHint This is a form hint.
+    .ctrlHolder
+      %label{:for => ""}
+        %em *
+        Textarea
+      %textarea{:cols => "25", :id => "", :name => "", :rows => "25"}
+      %p.formHint This is a form hint.
+    .ctrlHolder
+      %label{:for => ""} Select
+      %select.selectInput{:id => "", :name => ""}
+        %option{"data-default-value" => "Placeholder text"} Option
+      %p.formHint This is a form hint.
+    .ctrlHolder
+      %label{:for => ""} File upload
+      %input.fileUpload{:id => "", :name => "", :size => "35", :type => "file"}/
+      %p.formHint This is a form hint.
+    .ctrlHolder
+      %p.label
+        %em *
+        Multifield with select boxes
+      %ul
+        %li
+          %label{:for => ""}
+            Label
+            %select{:id => "", :name => ""}
+              %option{"data-default-value" => "Placeholder text"} Option
+        %li
+          %label{:for => ""}
+            Label
+            %select{:id => "", :name => ""}
+              %option{"data-default-value" => "Placeholder text"} Option
+        %li
+          %label{:for => ""}
+            Label
+            %select{:id => "", :name => ""}
+              %option{"data-default-value" => "Placeholder text"} Option
+      %p.formHint This is a form hint.
+    .ctrlHolder
+      %p.label
+        %em *
+        Alternate multifield Layout
+      %ul.alternate
+        %li
+          %label{:for => ""}
+            Label
+            %select{:id => "", :name => ""}
+              %option{"data-default-value" => "Placeholder text"} Option
+        %li
+          %label{:for => ""}
+            Label
+            %select{:id => "", :name => ""}
+              %option{"data-default-value" => "Placeholder text"} Option
+        %li
+          %label{:for => ""}
+            Label
+            %select{:id => "", :name => ""}
+              %option{"data-default-value" => "Placeholder text"} Option
+      %p.formHint This is a form hint.
+    .ctrlHolder
+      %p.label
+        %em *
+        Multifield with text inputs
+      %ul
+        %li
+          %label{:for => ""}
+            Label
+            %input.textInput{:id => "", :name => "", :type => "text"}/
+        %li
+          %label{:for => ""}
+            Label
+            %input.textInput{:id => "", :name => "", :type => "text"}/
+        %li
+          %label{:for => ""}
+            Label
+            %input.textInput{:id => "", :name => "", :type => "text"}/
+      %p.formHint This is a form hint.
+    .ctrlHolder
+      %p.label
+        %em *
+        Multifield with radios
+      %ul
+        %li
+          %label{:for => ""}
+            %input{:checked => "checked", "data-default-value" => "Placeholder text", :id => "", :name => "", :type => "radio"}/
+            Option
+        %li
+          %label{:for => ""}
+            %input{"data-default-value" => "Placeholder text", :id => "", :name => "", :type => "radio"}/
+            Option
+      %p.formHint This is a form hint.
+    .ctrlHolder.noLabel
+      %ul
+        %li
+          %label{:for => ""}
+            %input{"data-default-value" => "Placeholder text", :id => "", :name => "", :type => "checkbox"}/
+            I have read and agree with the terms and conditions
+      %p.formHint This is a form hint.
+  %fieldset.inlineLabels
+    %h3 Alternate Form Fields Layout
+    .ctrlHolder
+      %label{:for => ""}
+        %em *
+        Small text input
+      %input.textInput.small{"data-default-value" => "Placeholder text", :id => "", :maxlength => "50", :name => "", :size => "35", :type => "text"}/
+      %p.formHint This is a form hint.
+    #error1.ctrlHolder.error
+      %label{:for => ""}
+        %em *
+        Medium text input
+      %input.textInput.medium.error{:id => "", :maxlength => "50", :name => "", :size => "35", :type => "text", :value => "Invalid value"}/
+      %p.formHint This is a form hint.
+    .ctrlHolder
+      %label{:for => ""}
+        %em *
+        Large text input
+      %input.textInput.large{"data-default-value" => "Placeholder text", :id => "", :maxlength => "50", :name => "", :size => "35", :type => "text"}/
+      %p.formHint This is a form hint.
+    .ctrlHolder
+      %label{:for => ""}
+        %em *
+        Autosized text input
+      %input.textInput.auto{"data-default-value" => "Placeholder text", :id => "", :maxlength => "50", :name => "", :size => "15", :type => "text"}/
+      %p.formHint This is a form hint.
+    .ctrlHolder
+      %label{:for => ""}
+        %em *
+        Textarea
+      %textarea{:cols => "25", :id => "", :name => "", :rows => "25"}
+      %p.formHint This is a form hint.
+    .ctrlHolder
+      %label{:for => ""} Select
+      %select.selectInput{:id => "", :name => ""}
+        %option{"data-default-value" => "Placeholder text"} Option
+      %p.formHint This is a form hint.
+    .ctrlHolder
+      %label{:for => ""} File upload
+      %input.fileUpload{:id => "", :name => "", :size => "35", :type => "file"}/
+      %p.formHint This is a form hint.
+    .ctrlHolder
+      %p.label
+        %em *
+        Multifield with select boxes
+      %ul
+        %li
+          %label{:for => ""}
+            Label
+            %select{:id => "", :name => ""}
+              %option{"data-default-value" => "Placeholder text"} Option
+        %li
+          %label{:for => ""}
+            Label
+            %select{:id => "", :name => ""}
+              %option{"data-default-value" => "Placeholder text"} Option
+        %li
+          %label{:for => ""}
+            Label
+            %select{:id => "", :name => ""}
+              %option{"data-default-value" => "Placeholder text"} Option
+      %p.formHint This is a form hint.
+    .ctrlHolder
+      %p.label
+        %em *
+        Alternate multifield Layout
+      %ul.alternate
+        %li
+          %label{:for => ""}
+            Label
+            %select{:id => "", :name => ""}
+              %option{"data-default-value" => "Placeholder text"} Option
+        %li
+          %label{:for => ""}
+            Label
+            %select{:id => "", :name => ""}
+              %option{"data-default-value" => "Placeholder text"} Option
+        %li
+          %label{:for => ""}
+            Label
+            %select{:id => "", :name => ""}
+              %option{"data-default-value" => "Placeholder text"} Option
+      %p.formHint This is a form hint.
+    .ctrlHolder
+      %p.label
+        %em *
+        Multifield with text inputs
+      %ul
+        %li
+          %label{:for => ""}
+            Label
+            %input.textInput{:id => "", :name => "", :type => "text"}/
+        %li
+          %label{:for => ""}
+            Label
+            %input.textInput{:id => "", :name => "", :type => "text"}/
+        %li
+          %label{:for => ""}
+            Label
+            %input.textInput{:id => "", :name => "", :type => "text"}/
+      %p.formHint This is a form hint.
+    .ctrlHolder
+      %p.label
+        %em *
+        Multifield with radios
+      %ul
+        %li
+          %label{:for => ""}
+            %input{:checked => "checked", "data-default-value" => "Placeholder text", :id => "", :name => "", :type => "radio"}/
+            Option
+        %li
+          %label{:for => ""}
+            %input{"data-default-value" => "Placeholder text", :id => "", :name => "", :type => "radio"}/
+            Option
+      %p.formHint This is a form hint.
+    .ctrlHolder.noLabel
+      %ul
+        %li
+          %label{:for => ""}
+            %input{"data-default-value" => "Placeholder text", :id => "", :name => "", :type => "checkbox"}/
+            I have read and agree with the terms and conditions
+      %p.formHint This is a form hint.
+  .buttonHolder
+    %button.secondaryAction{:type => "submit"} ← Cancel and go back
+    %button.primaryAction{:type => "submit"} Submit
+.browse
+  %h2 Change style
+  %ul
+    %li
+      %a{:href => "#", :rel => "stylesheets/default.uni-form.css"} Default
+      %a.download{:href => "http://sprawsm.com/uni-form/styles/default.uni-form.zip", :title => "download style"}
+        %img{:alt => "download", :height => "12", :src => "http://sprawsm.com/uni-form/assets/download.png", :width => "9"}/
+    %li
+      %a{:href => "#", :rel => "stylesheets/blue.uni-form.css"} Blue
+      %a.download{:href => "http://sprawsm.com/uni-form/styles/blue.uni-form.zip", :title => "download style"}
+        %img{:alt => "download", :height => "12", :src => "http://sprawsm.com/uni-form/assets/download.png", :width => "9"}/
+    %li
+      %a{:href => "#", :rel => "stylesheets/dark.uni-form.css"} Dark
+      %a.download{:href => "http://sprawsm.com/uni-form/styles/blue.uni-form.css", :title => "download style"}
+        %img{:alt => "download", :height => "12", :src => "http://sprawsm.com/uni-form/assets/download.png", :width => "9"}/
+#footer
+  %p
+    Uni-Form is created by
+    %a{:href => "http://sprawsm.com/", :title => "Dragan is the founder of Superawesome"} Dragan Babić
+    and is licensed under the MIT license.

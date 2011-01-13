@@ -1,0 +1,9 @@
+.bundle
+.components
+.DS_Store
+app_config.yml
+Gemfile.lock
+*.zip
+*.sqlite3
+*.db
+data/*
