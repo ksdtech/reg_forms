@@ -1,0 +1,18 @@
+reg_forms
+
+Online registration forms project, built with Uni-Form jQuery- and CSS-based 
+web form library in a Padrino (Sinatra) application.
+
+Planned features:
+- Validate form data for completeness and format
+- Validate physical addresses using Yahoo PlaceFinder API
+- Incorporate some type of digital signature or attached PDF scans for
+  legal agreements
+- Auditing (temporal database) based on nightly "AutoComm" and "AutoSend"
+  to PowerSchool Student Information System.
+  
+Resources:
+- http://www.cs.arizona.edu/~rts/publications.html on temporal databases
+- http://sprawsm.com/uni-form/ Uni-Form forms library
+- http://www.padrinorb.com/ Padrino web app framework
+
